@@ -8,8 +8,8 @@ project ( tolua C )
 cmake_minimum_required ( VERSION 2.8 )
 include ( cmake/dist.cmake )
 
-find_package ( Lua REQUIRED )
-include_directories ( include src/lib ${LUA_INCLUDE_DIR} )
+# find_package ( Lua REQUIRED )
+include_directories ( include src/lib include lua-5.1.3/src)
 
 # Build lib
 if ( MSVC )
@@ -17,8 +17,10 @@ if ( MSVC )
 endif ()
 
 file ( GLOB SRC_LIBTOLUA src/lib/*.c )
+file ( GLOB SRC_LIBLUA lua-5.1.3/src/*.c )
 
 add_library ( tolua_lib ${SRC_LIBTOLUA} )
+add_library ( lua_lib ${SRC_LIBLUA} )
 target_link_libraries ( tolua_lib ${LUA_LIBRARIES} )
 set_target_properties ( tolua_lib PROPERTIES OUTPUT_NAME tolua CLEAN_DIRECT_OUTPUT
   1 )

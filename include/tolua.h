@@ -11,7 +11,7 @@
 ** the author has no obligation to provide maintenance, support, updates,
 ** enhancements, or modifications. 
 */
-
+#define LUA_OK 0
 
 #ifndef TOLUA_H
 #define TOLUA_H
