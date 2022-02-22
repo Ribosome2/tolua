@@ -1,0 +1,5 @@
+local test = Test:new(1, 2)
+test:sayHello()
+print("a = " .. test:getA())
+print("a + b = " .. test:add())
+print("I am test file")

@@ -57,7 +57,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>lua-5.2.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>lua-5.2.0\src;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
@@ -68,7 +68,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>lua-5.2.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>lua-5.2.0\src;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
@@ -76,6 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\tolua.h" />
     <ClInclude Include="lua-5.2.0\src\lapi.h" />
     <ClInclude Include="lua-5.2.0\src\lauxlib.h" />
     <ClInclude Include="lua-5.2.0\src\lcode.h" />
@@ -100,14 +101,23 @@
     <ClInclude Include="lua-5.2.0\src\lundump.h" />
     <ClInclude Include="lua-5.2.0\src\lvm.h" />
     <ClInclude Include="lua-5.2.0\src\lzio.h" />
+    <ClInclude Include="testConsoleApp\mylib.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="testConsoleApp\main.cpp" />
+    <ClCompile Include="testConsoleApp\mylib.cpp" />
+    <ClCompile Include="testConsoleApp\tolua.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="library.vcxproj">
       <Project>{3A796C79-A658-EB14-AF70-76EB1BCF5176}</Project>
     </ProjectReference>
+    <ProjectReference Include="toluaLib.vcxproj">
+      <Project>{81F070EE-6DBD-CBF9-96D6-B9A182020188}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="luaScripts\Test.lua" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

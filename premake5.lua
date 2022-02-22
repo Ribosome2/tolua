@@ -56,9 +56,14 @@ project "testConsoleApp"
     kind "ConsoleApp"
     files{
         "testConsoleApp/main.cpp",
+        "testConsoleApp/mylib.cpp",
+        "testConsoleApp/mylib.h",
+        "testConsoleApp/tolua.cpp",
         "lua-5.2.0/src/**.h",
+        "include/**.h"
         
     }
     includedirs "lua-5.2.0/src"
-    links{ "library"}
+    includedirs "include"
+    links{ "library","toluaLib"}
 
