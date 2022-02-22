@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lua-5.2.0">
+      <UniqueIdentifier>{47D254A8-B33C-091F-FC7A-BAC46824E773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua-5.2.0\src">
+      <UniqueIdentifier>{DE5B8E8F-4A1C-0AC6-1357-53437FD64EA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="testConsoleApp">
+      <UniqueIdentifier>{F9228755-E5F0-7A5B-CE84-EB81BAF156C0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lua-5.2.0\src\lapi.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lauxlib.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lcode.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lctype.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\ldebug.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\ldo.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lfunc.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lgc.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\llex.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\llimits.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lmem.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lobject.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lopcodes.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lparser.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lstate.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lstring.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\ltable.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\ltm.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lua.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\luaconf.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lualib.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lundump.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lvm.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lzio.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="testConsoleApp\main.cpp">
+      <Filter>testConsoleApp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
