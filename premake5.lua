@@ -11,31 +11,31 @@ project "library"
     kind "StaticLib"
 
     files { 
-        'lua-5.1.3/src/**.c',
+        'lua-5.2.0/src/**.c',
         
     }
-    includedirs "lua-5.1.3/src"
+    includedirs "lua-5.2.0/src"
 
 --lua 解析器工程
 project "interpreter"
     kind "ConsoleApp"
     files{
-        "lua-5.1.3/src/lua.c",
-        "lua-5.1.3/src/**.h"
+        "lua-5.2.0/src/lua.c",
+        "lua-5.2.0/src/**.h"
     }
     links {  "library"}
-    includedirs "lua-5.1.3/src"
+    includedirs "lua-5.2.0/src"
 
     
 project "toluaLib"
     kind "StaticLib"
     files{
         "src/lib/**.c",
-        "lua-5.1.3/src/**.h",
+        "lua-5.2.0/src/**.h",
         "include/**.h"
     }
     links {  "library"}
-    includedirs "lua-5.1.3/src"
+    includedirs "lua-5.2.0/src"
     includedirs "src/lib"
     includedirs "include"
 
@@ -45,11 +45,11 @@ project "ToluaC"
         "include/**.h",
         "src/bin/tolua.c",
         "src/bin/toluabind.c",
-        "lua-5.1.3/src/**.h"
+        "lua-5.2.0/src/**.h"
 
     }
     links{"library","toluaLib"}
     includedirs "include"
-    includedirs "lua-5.1.3/src"
+    includedirs "lua-5.2.0/src"
     
 

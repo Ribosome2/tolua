@@ -4,11 +4,11 @@
     <Filter Include="include">
       <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
     </Filter>
-    <Filter Include="lua-5.1.3">
-      <UniqueIdentifier>{09CE54A8-7538-091F-BE76-BAC42A20E773}</UniqueIdentifier>
+    <Filter Include="lua-5.2.0">
+      <UniqueIdentifier>{47D254A8-B33C-091F-FC7A-BAC46824E773}</UniqueIdentifier>
     </Filter>
-    <Filter Include="lua-5.1.3\src">
-      <UniqueIdentifier>{A068CA42-0C29-4679-D563-8FF641E38A55}</UniqueIdentifier>
+    <Filter Include="lua-5.2.0\src">
+      <UniqueIdentifier>{DE5B8E8F-4A1C-0AC6-1357-53437FD64EA2}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
       <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
@@ -21,74 +21,77 @@
     <ClInclude Include="include\tolua.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lapi.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lapi.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lauxlib.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lauxlib.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lcode.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lcode.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\ldebug.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lctype.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\ldo.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\ldebug.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lfunc.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\ldo.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lgc.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lfunc.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\llex.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lgc.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\llimits.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\llex.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lmem.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\llimits.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lobject.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lmem.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lopcodes.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lobject.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lparser.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lopcodes.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lstate.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lparser.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lstring.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lstate.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\ltable.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lstring.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\ltm.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\ltable.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lua.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\ltm.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\luaconf.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lua.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lualib.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\luaconf.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lundump.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lualib.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lvm.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lundump.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
-    <ClInclude Include="lua-5.1.3\src\lzio.h">
-      <Filter>lua-5.1.3\src</Filter>
+    <ClInclude Include="lua-5.2.0\src\lvm.h">
+      <Filter>lua-5.2.0\src</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.0\src\lzio.h">
+      <Filter>lua-5.2.0\src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
