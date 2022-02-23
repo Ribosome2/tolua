@@ -25,3 +25,8 @@ int Test::getA()
 {
     return this->a;
 }
+
+float Test::Triple(float b)
+{
+    return b * 3;
+}

@@ -186,6 +186,38 @@ static int tolua_mylib_Test_getA00(lua_State* tolua_S)
 #endif
 }
 
+/* method: Triple of class  Test */
+static int tolua_mylib_Test_Triple00(lua_State* tolua_S)
+{
+#ifndef TOLUA_RELEASE
+ tolua_Error tolua_err;
+ if (
+ !tolua_isusertype(tolua_S,1,"Test",0,&tolua_err) || 
+ !tolua_isnumber(tolua_S,2,0,&tolua_err) || 
+ !tolua_isnoobj(tolua_S,3,&tolua_err)
+ )
+ goto tolua_lerror;
+ else
+#endif
+ {
+  Test* self = (Test*)  tolua_tousertype(tolua_S,1,0);
+  float b = ((float)  tolua_tonumber(tolua_S,2,0));
+#ifndef TOLUA_RELEASE
+ if (!self) tolua_error(tolua_S,"invalid 'self' in function 'Triple'",NULL);
+#endif
+ {
+  float tolua_ret = (float)  self->Triple(b);
+ tolua_pushnumber(tolua_S,(lua_Number)tolua_ret);
+ }
+ }
+ return 1;
+#ifndef TOLUA_RELEASE
+ tolua_lerror:
+ tolua_error(tolua_S,"#ferror in function 'Triple'.",&tolua_err);
+ return 0;
+#endif
+}
+
 /* Open lib function */
 LUALIB_API int luaopen_mylib (lua_State* tolua_S)
 {
@@ -204,6 +236,7 @@ LUALIB_API int luaopen_mylib (lua_State* tolua_S)
  tolua_function(tolua_S,"sayHello",tolua_mylib_Test_sayHello00);
  tolua_function(tolua_S,"add",tolua_mylib_Test_add00);
  tolua_function(tolua_S,"getA",tolua_mylib_Test_getA00);
+ tolua_function(tolua_S,"Triple",tolua_mylib_Test_Triple00);
  tolua_endmodule(tolua_S);
  tolua_endmodule(tolua_S);
  return 1;

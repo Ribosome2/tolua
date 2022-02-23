@@ -109,15 +109,16 @@
     <ClCompile Include="testConsoleApp\tolua.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="luaScripts\Test.lua" />
+    <None Include="testConsoleApp\mylib.pkg" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="library.vcxproj">
       <Project>{3A796C79-A658-EB14-AF70-76EB1BCF5176}</Project>
     </ProjectReference>
     <ProjectReference Include="toluaLib.vcxproj">
       <Project>{81F070EE-6DBD-CBF9-96D6-B9A182020188}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="luaScripts\Test.lua" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

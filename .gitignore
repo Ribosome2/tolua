@@ -2,3 +2,4 @@
 build/
 obj/Debug/
 bin/Debug/
+*.vcxproj

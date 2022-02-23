@@ -10,6 +10,9 @@
     <Filter Include="lua-5.2.0\src">
       <UniqueIdentifier>{DE5B8E8F-4A1C-0AC6-1357-53437FD64EA2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="luaScripts">
+      <UniqueIdentifier>{CF394F90-BBF1-90DD-24F9-693910D02BCE}</UniqueIdentifier>
+    </Filter>
     <Filter Include="testConsoleApp">
       <UniqueIdentifier>{F9228755-E5F0-7A5B-CE84-EB81BAF156C0}</UniqueIdentifier>
     </Filter>
@@ -106,6 +109,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="luaScripts\Test.lua" />
+    <None Include="luaScripts\Test.lua">
+      <Filter>luaScripts</Filter>
+    </None>
+    <None Include="testConsoleApp\mylib.pkg">
+      <Filter>testConsoleApp</Filter>
+    </None>
   </ItemGroup>
 </Project>

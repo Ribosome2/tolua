@@ -58,9 +58,11 @@ project "testConsoleApp"
         "testConsoleApp/main.cpp",
         "testConsoleApp/mylib.cpp",
         "testConsoleApp/mylib.h",
+        "testConsoleApp/mylib.pkg",
         "testConsoleApp/tolua.cpp",
         "lua-5.2.0/src/**.h",
-        "include/**.h"
+        "include/**.h",
+        "luaScripts/**.lua"
         
     }
     includedirs "lua-5.2.0/src"
